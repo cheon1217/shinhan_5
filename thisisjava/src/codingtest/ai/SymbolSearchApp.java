@@ -70,7 +70,7 @@ class PatternGenerator {
         char digit = digits.charAt(index);
         for (String symbol : mapper.getSymbols(digit)) {
             if (usedSymbols.contains(symbol)) continue;
-            if (mapper.getDigitsForSymbol(symbol).size() > 1) continue; // ambiguous symbol
+            if (mapper.getDigitsForSymbol(symbol).size() > 1) continue; 
 
             current.append(symbol);
             usedSymbols.add(symbol);
